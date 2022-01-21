@@ -1,5 +1,5 @@
-import { IoLogoGithub, IoOpenOutline } from 'react-icons/io5'
-import { Link as ReactRouterLink } from 'react-router-dom'
+import {IoLogoGithub, IoOpenOutline} from 'react-icons/io5'
+import {Link as ReactRouterLink} from 'react-router-dom'
 import {
 	Box,
 	Button,
@@ -14,13 +14,13 @@ import {
 	useTheme,
 } from '@mui/material'
 
-import { WhatIsASpace } from '../WhatIsASpace'
+import {WhatIsASpace} from '../WhatIsASpace'
 
 import AvalancheLogo from '@/assets/avax-logo-official.svg'
 import Logo from '@/assets/spaces-logo.png'
-import { APP_NAME, CHAIN_ID_URL, SUBNET_ID_URL } from '@/constants'
-import { obfuscateAddress } from '@/utils/obfuscateAddress'
-import { getNetworks } from '@/utils/spacesVM'
+import {APP_NAME, CHAIN_ID_URL, SUBNET_ID_URL} from '@/constants'
+import {obfuscateAddress} from '@/utils/obfuscateAddress'
+import {getNetworks} from '@/utils/spacesVM'
 
 const StyledImg = styled('img')(({ theme }: { theme: Theme }) => ({
 	filter: theme.palette.mode === 'dark' ? 'invert(0)' : 'invert(1)',
@@ -79,7 +79,7 @@ export const Footer = memo(() => {
 					<Grid item>
 						<Typography component="footer" variant="body2" sx={{ width: '100%', opacity: 0.5, py: 1 }} align="right">
 							<Link color="inherit" href="https://spacesvm.xyz/" rel="noopener noreferrer" target="_blank">
-								Powered by the SpacesVM Avalanche Subnet
+								Powered by the CopyrightChain Avalanche Subnet
 							</Link>
 						</Typography>
 					</Grid>

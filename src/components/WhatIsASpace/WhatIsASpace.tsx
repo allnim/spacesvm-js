@@ -1,6 +1,6 @@
-import { Twemoji } from 'react-emoji-render'
-import { IoCloseCircleOutline, IoInformationCircleOutline } from 'react-icons/io5'
-import { Box, Button, Drawer, IconButton, Link, Tooltip, Typography } from '@mui/material'
+import {Twemoji} from 'react-emoji-render'
+import {IoCloseCircleOutline, IoInformationCircleOutline} from 'react-icons/io5'
+import {Box, Button, Drawer, IconButton, Link, Tooltip, Typography} from '@mui/material'
 
 import WhatsASpaceBg from '@/assets/whats-a-space.jpg'
 
@@ -69,7 +69,7 @@ export const WhatIsASpace = memo(({ isFooter = false }: WhatIsASpaceProps) => {
 					}}
 				>
 					<Typography variant="h4" color="#fff" sx={{ fontFamily: 'DM Serif Display' }}>
-						What's a space?
+						What's a Copyright registration?
 					</Typography>
 				</Box>
 				<Box pt={'180px'}>
@@ -86,15 +86,15 @@ export const WhatIsASpace = memo(({ isFooter = false }: WhatIsASpaceProps) => {
 						<Link target="_blank" rel="noopener" href="https://eips.ethereum.org/EIPS/eip-712">
 							EIP-712
 						</Link>{' '}
-						compatible wallet. Only actions signed by this private key can modify a space.
+						compatible wallet. Only actions signed by this private key can register a Copyright.
 					</Typography>
 					<br />
 					<Typography variant="body1">
 						EIP-712 compliance in this case, however, does not mean that{' '}
 						<Link target="_blank" rel="noopener" href="https://github.com/ava-labs/spacesvm">
-							SpacesVM
+							CopyrightChain(s)
 						</Link>{' '}
-						is an EVM or even an EVM derivative. SpacesVM is a new Avalanche-native VM written from scratch to optimize
+						is an EVM or even an EVM derivative. 	CopyrightChain is a new Avalanche-native VM written from scratch to optimize
 						for storage-related operations.
 					</Typography>
 					<br />
@@ -121,17 +121,17 @@ export const WhatIsASpace = memo(({ isFooter = false }: WhatIsASpaceProps) => {
 					</Typography>
 					<br />
 					<Typography variant="body1">
-						Lastly, a short disclaimer. SpacesVM is new, unaudited code and should be treated as such. For this reason,
-						the Spaces Chain may be restarted to rollout new features and/or repair any incorrect state. This site
+						Lastly, a short disclaimer. 	CopyrightChain is new, unaudited code and should be treated as such. For this reason,
+						the 	CopyrightChain may be restarted to rollout new features and/or repair any incorrect state. This site
 						exists <span style={{ fontWeight: 600 }}> solely </span> to demonstrate the coolness of Avalanche Subnets
 						and the VMs you could build on them. If you have any suggestions for what could be improved, open an
 						issue/PR on{' '}
 						<Link target="_blank" rel="noopener" href="https://github.com/ava-labs/spacesvm">
-							SpacesVM
+							CopyrightChain
 						</Link>{' '}
 						or{' '}
 						<Link target="_blank" rel="noopener" href="https://github.com/ava-labs/spacesvm-js">
-							SpacesVM JS
+							CopyrightChain JS
 						</Link>
 						.
 					</Typography>
