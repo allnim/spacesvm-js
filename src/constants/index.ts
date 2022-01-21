@@ -1,6 +1,6 @@
-import { FIRST_NAMES } from './firstNames'
+import {FIRST_NAMES} from './firstNames'
 
-import { shuffleArray } from '@/utils/shuffleArray'
+import {shuffleArray} from '@/utils/shuffleArray'
 
 // localStorage keys
 export const THEME_LOCAL_STORAGE_KEY = 'spaces-theme'
@@ -12,8 +12,8 @@ export const SUBNET_ID_URL = 'https://testnet.avascan.info/blockchains?subnet='
 export const CHAIN_ID_URL = 'https://testnet.avascan.info/blockchain/'
 
 // Overview
-export const APP_NAME = 'Spaces'
-export const APP_SLOGAN = 'Claim your space on the Avalanche blockchain'
+export const APP_NAME = 'CopyrightChain'
+export const APP_SLOGAN = 'Register your Copyright on the CopyrightChain'
 
 // units
 export const ONE_SECOND_IN_MS = 1000
