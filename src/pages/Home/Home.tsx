@@ -193,7 +193,7 @@ export const Home = memo(() => {
 
 			<form onSubmit={handleSubmit} autoComplete="off">
 				<PageTitle align="center" lineHeight={1} mt={2}>
-					Enter the unique CISAC id{' '}
+					Enter the CISAC id{' '}
 					<Typography
 						variant="h3"
 						lineHeight="inherit"
