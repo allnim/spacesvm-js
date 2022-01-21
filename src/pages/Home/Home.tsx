@@ -97,7 +97,7 @@ export const Home = memo(() => {
 		if (balance < calculateClaimCost(username)) {
 			enqueueSnackbar(
 				<>
-					You don't have enough SPC to claim this space!
+					You don't have enough CTIM to claim this space!
 					<br />
 					Tip: Longer names are cheaper. 😉
 				</>,

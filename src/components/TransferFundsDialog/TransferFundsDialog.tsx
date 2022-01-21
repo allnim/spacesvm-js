@@ -1,7 +1,6 @@
-import { Twemoji } from 'react-emoji-render'
-import { AiOutlineRedo } from 'react-icons/ai'
-import { IoCloseCircleOutline } from 'react-icons/io5'
-import { IoAdd, IoRemove } from 'react-icons/io5'
+import {Twemoji} from 'react-emoji-render'
+import {AiOutlineRedo} from 'react-icons/ai'
+import {IoAdd, IoCloseCircleOutline, IoRemove} from 'react-icons/io5'
 import {
 	Box,
 	Button,
@@ -23,21 +22,21 @@ import {
 	useTheme,
 } from '@mui/material'
 import capitalize from 'lodash/capitalize'
-import { useSnackbar } from 'notistack'
+import {useSnackbar} from 'notistack'
 
-import { NoFundsDialog } from './NoFundsDialog'
-import { TransferFundsSuccessDialog } from './TransferFundsSuccessDialog'
+import {NoFundsDialog} from './NoFundsDialog'
+import {TransferFundsSuccessDialog} from './TransferFundsSuccessDialog'
 
 import MetaMaskFoxLogo from '@/assets/metamask-fox.svg'
-import { AddressChip } from '@/components/AddressChip'
-import { DialogTitle } from '@/components/DialogTitle'
-import { useMetaMask } from '@/providers/MetaMaskProvider'
-import { purpleButton } from '@/theming/purpleButton'
-import { rainbowText } from '@/theming/rainbowText'
-import { TxType } from '@/types'
-import { TRANSFER_COST } from '@/utils/calculateCost'
-import { getSuggestedFee } from '@/utils/spacesVM'
-import { isValidWalletAddress } from '@/utils/verifyAddress'
+import {AddressChip} from '@/components/AddressChip'
+import {DialogTitle} from '@/components/DialogTitle'
+import {useMetaMask} from '@/providers/MetaMaskProvider'
+import {purpleButton} from '@/theming/purpleButton'
+import {rainbowText} from '@/theming/rainbowText'
+import {TxType} from '@/types'
+import {TRANSFER_COST} from '@/utils/calculateCost'
+import {getSuggestedFee} from '@/utils/spacesVM'
+import {isValidWalletAddress} from '@/utils/verifyAddress'
 
 type TransferFundsDialogProps = {
 	open: boolean
@@ -154,7 +153,7 @@ export const TransferFundsDialog = ({ open, close }: TransferFundsDialogProps) =
 			<Dialog fullScreen={isMobile} maxWidth="sm" open={open && !!balance && !isDone} onClose={handleClose}>
 				<DialogTitle onClose={handleClose}>
 					<Typography gutterBottom variant="h3" component="p" fontFamily="DM Serif Display" align="center">
-						Transfer SPC
+						Transfer CTIM
 					</Typography>
 				</DialogTitle>
 				<DialogContent>
@@ -228,7 +227,7 @@ export const TransferFundsDialog = ({ open, close }: TransferFundsDialogProps) =
 						<Divider flexItem orientation="vertical" sx={{ mr: 2 }} />
 
 						<Typography variant="h4" component="span" color="textSecondary" sx={{ width: 100 }}>
-							SPC
+							CTIM
 						</Typography>
 					</Box>
 
