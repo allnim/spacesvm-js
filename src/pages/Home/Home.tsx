@@ -193,7 +193,7 @@ export const Home = memo(() => {
 
 			<form onSubmit={handleSubmit} autoComplete="off">
 				<PageTitle align="center" lineHeight={1} mt={2}>
-					Claim your{' '}
+					Enter the unique CISAC id{' '}
 					<Typography
 						variant="h3"
 						lineHeight="inherit"
@@ -203,7 +203,7 @@ export const Home = memo(() => {
 							...rainbowText,
 						}}
 					>
-						space
+						ISWC
 					</Typography>
 				</PageTitle>
 				<PageSubtitle gutterBottom align="center">
