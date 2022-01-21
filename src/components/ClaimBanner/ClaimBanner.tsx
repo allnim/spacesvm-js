@@ -1,8 +1,8 @@
-import { LazyLoadComponent } from 'react-lazy-load-image-component'
-import { Box, Button, styled } from '@mui/material'
+import {LazyLoadComponent} from 'react-lazy-load-image-component'
+import {Box, Button, styled} from '@mui/material'
 
 import ActivityBg from '@/assets/activity.jpg'
-import { rainbowButton } from '@/theming/rainbowButton'
+import {rainbowButton} from '@/theming/rainbowButton'
 
 const ClaimButton = styled(Button)(({ theme }: any) => ({
 	...rainbowButton(theme),
@@ -33,7 +33,7 @@ export const ClaimBanner = memo(() => (
 				variant="contained"
 				size="large"
 			>
-				Claim your space
+				Register your Copyright
 			</ClaimButton>
 		</Box>
 	</LazyLoadComponent>
