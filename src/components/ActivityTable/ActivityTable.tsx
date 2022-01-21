@@ -1,6 +1,6 @@
-import { SyntheticEvent } from 'react'
-import { Twemoji } from 'react-emoji-render'
-import { Link } from 'react-router-dom'
+import {SyntheticEvent} from 'react'
+import {Twemoji} from 'react-emoji-render'
+import {Link} from 'react-router-dom'
 import {
 	Box,
 	Card,
@@ -18,10 +18,10 @@ import {
 } from '@mui/material'
 import findIndex from 'lodash/findIndex'
 
-import { AddressChip } from '@/components/AddressChip/AddressChip'
-import { ACTIVITY_TABLE_TAB_STORAGE_KEY, ONE_SECOND_IN_MS } from '@/constants'
-import { useLocalStorage } from '@/hooks/useLocalStorage'
-import { getLatestActivity } from '@/utils/spacesVM'
+import {AddressChip} from '@/components/AddressChip/AddressChip'
+import {ACTIVITY_TABLE_TAB_STORAGE_KEY, ONE_SECOND_IN_MS} from '@/constants'
+import {useLocalStorage} from '@/hooks/useLocalStorage'
+import {getLatestActivity} from '@/utils/spacesVM'
 
 export const ActivityTable = memo(() => {
 	const [tps, setTps] = useState<number>()
@@ -311,7 +311,7 @@ export const ActivityTable = memo(() => {
 															<Typography variant="body2" fontWeight={900} noWrap>
 																Amount{' '}
 																<Typography sx={{ ml: 1 }} variant="body2" component="span" color="textSecondary">
-																	(SPC)
+																	(CTIM)
 																</Typography>
 															</Typography>
 														</TableCell>

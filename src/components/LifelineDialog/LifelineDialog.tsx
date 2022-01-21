@@ -1,7 +1,7 @@
-import { Twemoji } from 'react-emoji-render'
-import { AiOutlineRedo } from 'react-icons/ai'
-import { IoAdd, IoCloseCircleOutline, IoRemove } from 'react-icons/io5'
-import { useParams } from 'react-router-dom'
+import {Twemoji} from 'react-emoji-render'
+import {AiOutlineRedo} from 'react-icons/ai'
+import {IoAdd, IoCloseCircleOutline, IoRemove} from 'react-icons/io5'
+import {useParams} from 'react-router-dom'
 import {
 	Box,
 	Button,
@@ -16,18 +16,18 @@ import {
 	useMediaQuery,
 	useTheme,
 } from '@mui/material'
-import { useSnackbar } from 'notistack'
+import {useSnackbar} from 'notistack'
 
-import { LifelineDoneDialog } from './LifelineDoneDialog'
+import {LifelineDoneDialog} from './LifelineDoneDialog'
 
 import MetaMaskFoxLogo from '@/assets/metamask-fox.svg'
-import { DialogTitle } from '@/components/DialogTitle'
-import { useMetaMask } from '@/providers/MetaMaskProvider'
-import { purpleButton } from '@/theming/purpleButton'
-import { rainbowText } from '@/theming/rainbowText'
-import { TxType } from '@/types'
-import { calculateLifelineCost, getDisplayLifelineTime, getExtendToTime } from '@/utils/calculateCost'
-import { getSuggestedFee } from '@/utils/spacesVM'
+import {DialogTitle} from '@/components/DialogTitle'
+import {useMetaMask} from '@/providers/MetaMaskProvider'
+import {purpleButton} from '@/theming/purpleButton'
+import {rainbowText} from '@/theming/rainbowText'
+import {TxType} from '@/types'
+import {calculateLifelineCost, getDisplayLifelineTime, getExtendToTime} from '@/utils/calculateCost'
+import {getSuggestedFee} from '@/utils/spacesVM'
 
 const SubmitButton = styled(Button)(({ theme }: any) => ({
 	...purpleButton(theme),
@@ -188,7 +188,7 @@ export const LifelineDialog = ({
 						<Grid item>
 							<Tooltip
 								placement="right"
-								title={!spaceId || calculateLifelineCost(spaceId, extendUnits + 1) >= balance ? 'Not enough SPC!' : ''}
+								title={!spaceId || calculateLifelineCost(spaceId, extendUnits + 1) >= balance ? 'Not enough Copyright Tokens!' : ''}
 							>
 								<span style={{ paddingTop: 20, paddingBottom: 20 }}>
 									<IconButton
@@ -235,7 +235,7 @@ export const LifelineDialog = ({
 								</Tooltip>
 							</Box>
 							<Box sx={{ mt: 1, display: 'flex', justifyContent: 'center' }}>
-								<Typography variant="caption">Cost: {fee} SPC</Typography>
+								<Typography variant="caption">Cost: {fee} CTIM</Typography>
 							</Box>
 						</div>
 					</Fade>

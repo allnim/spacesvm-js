@@ -1,24 +1,14 @@
-import { AiOutlineRedo } from 'react-icons/ai'
-import { IoSwapVertical } from 'react-icons/io5'
-import {
-	Button,
-	ButtonGroup,
-	Grid,
-	keyframes,
-	Theme,
-	Tooltip,
-	Typography,
-	useMediaQuery,
-	useTheme,
-} from '@mui/material'
-import { useSnackbar } from 'notistack'
+import {AiOutlineRedo} from 'react-icons/ai'
+import {IoSwapVertical} from 'react-icons/io5'
+import {Button, ButtonGroup, Grid, keyframes, Theme, Tooltip, Typography, useMediaQuery, useTheme,} from '@mui/material'
+import {useSnackbar} from 'notistack'
 
 import MetaMaskFoxLogo from '@/assets/metamask-fox.svg'
-import { TransferFundsDialog } from '@/components/TransferFundsDialog'
-import { useMetaMask } from '@/providers/MetaMaskProvider'
-import { numberWithCommas } from '@/utils/numberUtils'
-import { obfuscateAddress } from '@/utils/obfuscateAddress'
-import { setClipboard } from '@/utils/setClipboard'
+import {TransferFundsDialog} from '@/components/TransferFundsDialog'
+import {useMetaMask} from '@/providers/MetaMaskProvider'
+import {numberWithCommas} from '@/utils/numberUtils'
+import {obfuscateAddress} from '@/utils/obfuscateAddress'
+import {setClipboard} from '@/utils/setClipboard'
 
 const growWidth = keyframes`
 	0% {
@@ -98,7 +88,7 @@ export const MetaMaskSelect = () => {
 						</Tooltip>
 
 						{metaMaskExists && isConnectedToSpaces && (
-							<Tooltip title={'Transfer SPC'}>
+							<Tooltip title={'Transfer CTIM'}>
 								<Button
 									variant="outlined"
 									color="secondary"
@@ -129,7 +119,7 @@ export const MetaMaskSelect = () => {
 											sx={{ ml: 0.5 }}
 											style={{ fontSize: '1.1rem' }}
 										>
-											SPC
+											CTIM
 										</Typography>
 									</Typography>
 									<IoSwapVertical size="18" color={theme.palette.primary.light} />

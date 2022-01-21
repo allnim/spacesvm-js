@@ -1,7 +1,7 @@
-import { Twemoji } from 'react-emoji-render'
-import { Box, Button, Dialog, DialogContent, Grow, Typography } from '@mui/material'
+import {Twemoji} from 'react-emoji-render'
+import {Box, Button, Dialog, DialogContent, Grow, Typography} from '@mui/material'
 
-import { DialogTitle } from '@/components/DialogTitle'
+import {DialogTitle} from '@/components/DialogTitle'
 
 type NoFundsDialogProps = {
 	open: boolean
@@ -21,7 +21,7 @@ export const NoFundsDialog = ({ open, onClose }: NoFundsDialogProps) => (
 		</DialogTitle>
 		<DialogContent>
 			<Typography color="textSecondary" align="center">
-				You're out of SPC...
+				You're out of Copyright Tokens...
 			</Typography>
 			<Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
 				<Button color="secondary" size="small" variant="outlined" onClick={onClose} sx={{ display: 'flex' }}>

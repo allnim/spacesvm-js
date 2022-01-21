@@ -1,7 +1,7 @@
-import { Twemoji } from 'react-emoji-render'
-import { AiOutlineRedo } from 'react-icons/ai'
-import { IoCheckmarkCircle, IoClose, IoCloseCircleOutline, IoSearch } from 'react-icons/io5'
-import { createSearchParams, useNavigate, useSearchParams } from 'react-router-dom'
+import {Twemoji} from 'react-emoji-render'
+import {AiOutlineRedo} from 'react-icons/ai'
+import {IoCheckmarkCircle, IoClose, IoCloseCircleOutline, IoSearch} from 'react-icons/io5'
+import {createSearchParams, useNavigate, useSearchParams} from 'react-router-dom'
 import {
 	Alert,
 	Box,
@@ -22,25 +22,25 @@ import {
 	Typography,
 	useTheme,
 } from '@mui/material'
-import { useSnackbar } from 'notistack'
+import {useSnackbar} from 'notistack'
 
 import MetaMaskFoxLogo from '@/assets/metamask-fox.svg'
-import { ActivityTable } from '@/components/ActivityTable'
-import { ClaimBanner } from '@/components/ClaimBanner'
-import { ClaimedDialog } from '@/components/ClaimedDialog'
-import { Page } from '@/components/Page'
-import { PageSubtitle } from '@/components/PageSubtitle'
-import { PageTitle } from '@/components/PageTitle'
-import { TypewrittingInput } from '@/components/TypewrittingInput'
-import { WhatIsASpace } from '@/components/WhatIsASpace'
-import { USERNAME_REGEX_QUERY, USERNAMES, VALID_KEY_REGEX } from '@/constants'
-import { useMetaMask } from '@/providers/MetaMaskProvider'
-import { purpleButton } from '@/theming/purpleButton'
-import { rainbowButton } from '@/theming/rainbowButton'
-import { rainbowText } from '@/theming/rainbowText'
-import { TxType } from '@/types'
-import { calculateClaimCost } from '@/utils/calculateCost'
-import { getSuggestedFee, isAlreadyClaimed } from '@/utils/spacesVM'
+import {ActivityTable} from '@/components/ActivityTable'
+import {ClaimBanner} from '@/components/ClaimBanner'
+import {ClaimedDialog} from '@/components/ClaimedDialog'
+import {Page} from '@/components/Page'
+import {PageSubtitle} from '@/components/PageSubtitle'
+import {PageTitle} from '@/components/PageTitle'
+import {TypewrittingInput} from '@/components/TypewrittingInput'
+import {WhatIsASpace} from '@/components/WhatIsASpace'
+import {USERNAME_REGEX_QUERY, USERNAMES, VALID_KEY_REGEX} from '@/constants'
+import {useMetaMask} from '@/providers/MetaMaskProvider'
+import {purpleButton} from '@/theming/purpleButton'
+import {rainbowButton} from '@/theming/rainbowButton'
+import {rainbowText} from '@/theming/rainbowText'
+import {TxType} from '@/types'
+import {calculateClaimCost} from '@/utils/calculateCost'
+import {getSuggestedFee, isAlreadyClaimed} from '@/utils/spacesVM'
 
 const VerifyButton = styled(Button)(({ theme }: any) => ({
 	...purpleButton(theme),
@@ -405,7 +405,7 @@ export const Home = memo(() => {
 										<Typography variant="h6" gutterBottom>
 											Cost{' '}
 											<Typography component="span" color="textSecondary">
-												(SPC)
+												(CTIM)
 											</Typography>
 										</Typography>
 										<Typography variant="body2" color="textSecondary">
