@@ -85,8 +85,8 @@ export const Footer = memo(() => {
 					</Grid>
 					<Grid item>
 						<Typography component="footer" variant="body2" sx={{ width: '100%', opacity: 0.5, py: 1 }} align="right">
-							<Link color="inherit" href="https://dribbble.com/dmitrymoi/" rel="noopener noreferrer" target="_blank">
-								Illustrations by Dmitry Moiseenko
+							<Link color="inherit" href="https://copyrightflow.com" rel="noopener noreferrer" target="_blank">
+								Powered by Copyright Flow
 							</Link>
 						</Typography>
 					</Grid>
